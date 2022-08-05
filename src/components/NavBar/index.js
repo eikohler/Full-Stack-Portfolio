@@ -22,7 +22,7 @@ function NavBar() {
             <span>work</span>
             <span>contact</span>
         </nav>  
-        <span onClick={() => toggleDarkMode()}>
+        <span className='mode-switch' onClick={() => toggleDarkMode()}>
             <FontAwesomeIcon icon={faMoon} size="2x" />
         </span>
     </header>

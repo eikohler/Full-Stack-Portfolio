@@ -17,11 +17,11 @@
 
 [data-theme="dark"] {
   --main-bg-color: #000;
-  --highlight-bg-color: #0000ff;
+  --highlight-bg-color: #3697fc;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
-  --secondary-text-color: #333333;
-  --highlight-text-color: #0000ff;
+  --secondary-text-color: #333;
+  --highlight-text-color: #3697fc;
   --main-font: 'Barlow', sans-serif;
 
   --normal-font-size: 20px;
@@ -38,6 +38,11 @@ body {
 
 .main-container{
   height: 570px;
+}
+
+.mode-switch{
+  color: var(--main-text-color);
+  cursor: pointer;
 }
 
 nav span{
