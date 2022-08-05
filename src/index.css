@@ -1,0 +1,70 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap');
+/* --- */
+
+:root {
+  --main-bg-color: #fff;
+  --highlight-bg-color: #0000ff;
+  --dark-bg-color: #000;
+  --main-text-color: #000;
+  --secondary-text-color: #ccc;
+  --highlight-text-color: #0000ff;
+  --main-font: 'Barlow', sans-serif;
+
+  --normal-font-size: 20px;
+  --normal-font-weight: 500;
+}
+
+[data-theme="dark"] {
+  --main-bg-color: #000;
+  --highlight-bg-color: #0000ff;
+  --dark-bg-color: #fff;
+  --main-text-color: #fff;
+  --secondary-text-color: #464646;
+  --highlight-text-color: #0000ff;
+  --main-font: 'Barlow', sans-serif;
+
+  --normal-font-size: 20px;
+  --normal-font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container{
+  height: 570px;
+}
+
+nav span{
+  margin: 1rem 0px;
+  display: block;
+  color: var(--secondary-text-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--normal-font-weight);
+  cursor: pointer;
+}
+
+nav span:hover{
+  color: var(--highlight-text-color);
+}
+
+
+footer{
+  background-color: var(--dark-bg-color);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 1rem 0px;
+}
+
+footer a, footer a:hover{
+  color: var(--secondary-text-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--normal-font-weight);
+}
+
+
