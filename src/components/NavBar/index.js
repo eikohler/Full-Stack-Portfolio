@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-solid-svg-icons'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 function NavBar() {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,7 +23,8 @@ function NavBar() {
             <span>contact</span>
         </nav>  
         <span className='mode-switch' onClick={() => toggleDarkMode()}>
-            <FontAwesomeIcon icon={faMoon} size="2x" />
+            {!isDarkMode ? <FontAwesomeIcon icon={faMoon} size="2x" />
+            : <FontAwesomeIcon icon={faSun} size="2x"  />}
         </span>
     </header>
   );
