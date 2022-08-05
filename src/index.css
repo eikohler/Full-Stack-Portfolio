@@ -20,7 +20,7 @@
   --highlight-bg-color: #0000ff;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
-  --secondary-text-color: #464646;
+  --secondary-text-color: #333333;
   --highlight-text-color: #0000ff;
   --main-font: 'Barlow', sans-serif;
 
@@ -33,6 +33,7 @@ body {
   font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-bg-color);
 }
 
 .main-container{
