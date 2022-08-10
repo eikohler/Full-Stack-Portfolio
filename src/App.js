@@ -1,32 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
 import './App.css';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import ScrollBar from "./components/ScrollBar";
+import useOnScreen from "./hooks/useOnScreen"
 
 function App() {
+  const margin = "-400px";
+  
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const me = useOnScreen(ref1, margin);
+  const about = useOnScreen(ref2, margin);
+  const work = useOnScreen(ref3, margin);
+  const contact = useOnScreen(ref4, margin);
+
   return (
     <>
       <div className='container my-5'>
         <section className='row justify-content-between'>
           <div className='col-1'>
-            <Navbar />
+            <Navbar 
+            me={me}
+            about={about}
+            work={work}
+            contact={contact}
+            />
           </div>
           <div className='col-10'>
             <section className='row'>
                 <div className='col-11'>
                   <main>
-                    <section className="section-container">
+                    <section className="section-container" ref={ref1}>
                       <Home />
                     </section>
-                    <section className="section-container">
+                    <section className="section-container" ref={ref2}>
                       <Home />
                     </section>
-                    <section className="section-container">
+                    <section className="section-container" ref={ref3}>
                       <Home />
                     </section>
-                    <section className="section-container">
+                    <section className="section-container" ref={ref4}>
                       <Home />
                     </section>
                     <div className='bottom-spacer'></div>
