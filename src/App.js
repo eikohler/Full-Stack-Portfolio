@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/Home';
-
+import ScrollBar from "./components/ScrollBar";
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
                   </main>
                 </div>
                 <div className='col-1'>
-
+                  <ScrollBar />
                 </div>
             </section>            
           </div>        

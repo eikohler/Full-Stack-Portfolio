@@ -106,3 +106,20 @@ footer a, footer a:hover{
 .bottom-spacer{
   height: 6rem;
 }
+
+.scroll-track{
+  position: fixed;
+  border: 1px solid;
+  height: 80%;
+  width: 22px;
+}
+
+.scroll-btn{
+  height: 60px;
+  width: 20px;
+  background-color: var(--dark-bg-color);
+  border-radius: 100px;
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+}
