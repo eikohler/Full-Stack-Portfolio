@@ -109,9 +109,7 @@ footer a, footer a:hover{
 
 .scroll-track{
   position: fixed;
-  border: 1px solid;
   height: 80%;
-  width: 22px;
 }
 
 .scroll-btn{
@@ -121,5 +119,5 @@ footer a, footer a:hover{
   border-radius: 100px;
   position: absolute;
   cursor: pointer;
-  top: 0px;
+  top: 688px;
 }
