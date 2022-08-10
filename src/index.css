@@ -8,6 +8,7 @@
   --dark-bg-color: #000;
   --main-text-color: #000;
   --secondary-text-color: #ccc;
+  --footer-secondary-text-color: #ccc;
   --highlight-text-color: #0000ff;
   --main-font: 'Barlow', sans-serif;
 
@@ -20,7 +21,8 @@
   --highlight-bg-color: #3697fc;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
-  --secondary-text-color: #333;
+  --secondary-text-color: #ccc;
+  --footer-secondary-text-color: #333;
   --highlight-text-color: #3697fc;
   --main-font: 'Barlow', sans-serif;
 
@@ -38,7 +40,7 @@ body {
 
 header{
   position: fixed;
-  height: 85%;
+  height: 80%;
 }
 
 .main-container{
@@ -73,7 +75,7 @@ footer{
 }
 
 footer a, footer a:hover{
-  color: var(--secondary-text-color);
+  color: var(--footer-secondary-text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
 }
