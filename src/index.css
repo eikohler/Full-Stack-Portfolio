@@ -38,13 +38,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
+/* Nav */
 header{
   position: fixed;
   height: 80%;
-}
-
-.main-container{
-  height: 570px;
 }
 
 .mode-switch{
@@ -65,8 +62,9 @@ nav span{
 nav span:hover{
   color: var(--highlight-text-color);
 }
+/* Nav */
 
-
+/* Footer */
 footer{
   background-color: var(--dark-bg-color);
   position: fixed;
@@ -81,6 +79,7 @@ footer a, footer a:hover{
   font-weight: var(--normal-font-weight);
   user-select: none;
 }
+/* Footer */
 
 .section-container{
   height: 80vh;
@@ -101,4 +100,9 @@ footer a, footer a:hover{
 .home h2{
   color: var(--main-text-color);
   font-size: 4rem;
+}
+/* Home */
+
+.bottom-spacer{
+  height: 6rem;
 }
