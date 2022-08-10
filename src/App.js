@@ -7,12 +7,14 @@ function App() {
   return (
     <>
       <div className='main-container container mt-5'>
-        <section className='row'>
+        <section className='row justify-content-between'>
           <div className='col-1'>
             <Navbar />
           </div>
-          <div className='col-11'>
-            <Home />
+          <div className='col-10'>
+            <main>
+              <Home />
+            </main>
           </div>
         </section>
       </div>

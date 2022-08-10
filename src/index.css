@@ -18,7 +18,7 @@
 
 [data-theme="dark"] {
   --main-bg-color: #000;
-  --highlight-bg-color: #3697fc;
+  --highlight-bg-color: #0000ff;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
   --secondary-text-color: #ccc;
@@ -82,4 +82,23 @@ footer a, footer a:hover{
   user-select: none;
 }
 
+.section-container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Home */
+.home h1{
+  background-color: var(--highlight-bg-color);
+  color: #fff;
+  display: inline-block;
+  padding: 3px 2rem;
+  font-size: 6rem;
+}
+
+.home h2{
+  color: var(--main-text-color);
+  font-size: 4rem;
+}
