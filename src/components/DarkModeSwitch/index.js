@@ -3,24 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 function DarkModeSwitch() {
-    const [showDarkMode, setShowDarkMode] = useState(false);
-
-    // useEffect(() => {
-    //     const data = localStorage.getItem('dark_mode_theme');
-    //     console.log(data);
-    //     if(data) {
-    //         setShowDarkMode(data);
-    //     }   
-    // }, []);
+    const mode = JSON.parse(localStorage.getItem('dark_mode_theme')) || false;
+    const [showDarkMode, setShowDarkMode] = useState(mode);
 
     useEffect(() => {
-        console.log(showDarkMode);
-        // localStorage.setItem('dark_mode_theme', showDarkMode);
+        localStorage.setItem('dark_mode_theme', showDarkMode);
         if(showDarkMode){
-            console.log("darkmode");
             document.documentElement.setAttribute('data-theme', 'dark');
         }else{
-            console.log("lightmode");
             document.documentElement.setAttribute('data-theme', 'light');
         }
     }, [showDarkMode]);

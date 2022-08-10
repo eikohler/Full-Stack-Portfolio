@@ -59,6 +59,7 @@ nav span{
   font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
   cursor: pointer;
+  user-select: none;
 }
 
 nav span:hover{
@@ -78,6 +79,7 @@ footer a, footer a:hover{
   color: var(--footer-secondary-text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
+  user-select: none;
 }
 
 
