@@ -30,8 +30,7 @@ class ScrollBar extends Component {
                 y = 0;
             }
             $('.scroll-btn').css('top', `${y}px`);
-            // const y = document.querySelector('.scroll-btn').scrollTop / this.percentDiff;
-            // window.scrollTo(0, y);
+            window.scrollTo(0, y/this.percentDiff);
         }
     }
 
