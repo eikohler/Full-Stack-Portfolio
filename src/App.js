@@ -1,9 +1,13 @@
+import React, { useRef } from "react";
 import './App.css';
 import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 
+
 function App() {
+  const ref = useRef(null);
+
   return (
     <>
       <div className='container my-5'>
@@ -15,10 +19,18 @@ function App() {
             <section className='row'>
                 <div className='col-11'>
                   <main>
-                    <Home />
-                    <Home />
-                    <Home />
-                    <Home />
+                    <section className="section-container" ref={ref}>
+                      <Home />
+                    </section>
+                    <section className="section-container" ref={ref}>
+                      <Home />
+                    </section>
+                    <section className="section-container" ref={ref}>
+                      <Home />
+                    </section>
+                    <section className="section-container" ref={ref}>
+                      <Home />
+                    </section>
                     <div className='bottom-spacer'></div>
                   </main>
                 </div>
