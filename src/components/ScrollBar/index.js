@@ -31,14 +31,23 @@ class ScrollBar extends Component {
             }
             $('.scroll-btn').css('top', `${y}px`);
             window.scrollTo(0, y/this.percentDiff);
+
         }
     }
 
     handleEvent = (event) => {
         if (event.type === "mousedown") {
-            this.setState({ mouseDown: true });            
+            this.setState({ mouseDown: true }); 
+            $('html').css({
+                'cursor':'grabbing',
+                'user-select':'none'
+            });
         } else {
             this.setState({ mouseDown: false });
+            $('html').css({
+                'cursor':'default',
+                'user-select':'text'
+            });
         }
     }
 
@@ -62,7 +71,8 @@ class ScrollBar extends Component {
     render() {
         return (
             <div className='scroll-track'>
-                <div className='scroll-btn' onMouseDown={this.handleEvent}>
+                <div className={`scroll-btn ${this.state.mouseDown && 'active'}`} 
+                onMouseDown={this.handleEvent}>
                 </div>
             </div>
         );
