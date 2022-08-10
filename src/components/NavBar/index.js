@@ -7,10 +7,10 @@ function NavBar(props) {
   return (
     <header className='d-flex flex-column justify-content-between'>        
         <nav>
-            <span className={`${me && 'active'}`}>me</span>
-            <span className={`${about && 'active'}`}>about</span>
-            <span className={`${work && 'active'}`}>work</span>
-            <span className={`${contact && 'active'}`}>contact</span>
+            <a href="#home"><span className={`${me && 'active'}`}>me</span></a>
+            <a href="#about"><span className={`${about && 'active'}`}>about</span></a>
+            <a href="#work"><span className={`${work && 'active'}`}>work</span></a>
+            <a href="#contact"><span className={`${contact && 'active'}`}>contact</span></a>
         </nav>  
         <DarkModeSwitch />
     </header>

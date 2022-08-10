@@ -34,16 +34,16 @@ function App() {
             <section className='row'>
                 <div className='col-11'>
                   <main>
-                    <section className="section-container" ref={ref1}>
+                    <section id="home" className="section-container" ref={ref1}>
                       <Home />
                     </section>
-                    <section className="section-container" ref={ref2}>
+                    <section id="about" className="section-container" ref={ref2}>
                       <Home />
                     </section>
-                    <section className="section-container" ref={ref3}>
+                    <section id="work" className="section-container" ref={ref3}>
                       <Home />
                     </section>
-                    <section className="section-container" ref={ref4}>
+                    <section id="contact" className="section-container" ref={ref4}>
                       <Home />
                     </section>
                     <div className='bottom-spacer'></div>

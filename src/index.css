@@ -49,6 +49,10 @@ header{
   cursor: pointer;
 }
 
+nav a:hover{
+  text-decoration: none;
+}
+
 nav span{
   margin: 1rem 0px;
   display: block;
@@ -57,9 +61,11 @@ nav span{
   font-weight: var(--normal-font-weight);
   cursor: pointer;
   user-select: none;
+  transition: 0.2s all;
+
 }
 
-nav span:hover{
+nav span:hover, nav span.active{
   color: var(--highlight-text-color);
 }
 /* Nav */
