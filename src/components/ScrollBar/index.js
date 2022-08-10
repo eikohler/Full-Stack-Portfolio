@@ -9,11 +9,38 @@ class ScrollBar extends Component {
         this.btnHeight = 0;
         this.percentDiff = 0;
         this.updateHeight = this.updateHeight.bind(this);
+        this.moveScroll = this.moveScroll.bind(this);
+
+        this.state = {
+            mouseDown: false
+        }
     }
 
     updateHeight(){
-        // console.log(window.scrollY)
         $('.scroll-btn').css('top', `${window.scrollY*this.percentDiff}px`);
+    }
+
+    moveScroll(event){
+        if(this.state.mouseDown){
+            let y = event.clientY - this.btnHeight;
+            if(y > this.trackHeight){
+                y = this.trackHeight;
+            }
+            else if(y < 0){
+                y = 0;
+            }
+            $('.scroll-btn').css('top', `${y}px`);
+            // const y = document.querySelector('.scroll-btn').scrollTop / this.percentDiff;
+            // window.scrollTo(0, y);
+        }
+    }
+
+    handleEvent = (event) => {
+        if (event.type === "mousedown") {
+            this.setState({ mouseDown: true });            
+        } else {
+            this.setState({ mouseDown: false });
+        }
     }
 
     componentDidMount(){
@@ -23,16 +50,20 @@ class ScrollBar extends Component {
         this.percentDiff = this.trackHeight / this.totalHeight;
 
         window.addEventListener('scroll', this.updateHeight);        
+        window.addEventListener('mousemove', this.moveScroll); 
+        window.addEventListener('mouseup', this.handleEvent); 
     }
 
     componentWillUnmount() { 
         window.removeEventListener('scroll', this.updateHeight); 
+        window.removeEventListener('mousemove', this.moveScroll); 
+        window.removeEventListener('mouseup', this.handleEvent);
     }
 
     render() {
         return (
             <div className='scroll-track'>
-                <div className='scroll-btn'>
+                <div className='scroll-btn' onMouseDown={this.handleEvent}>
                 </div>
             </div>
         );
