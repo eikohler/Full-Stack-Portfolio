@@ -36,6 +36,11 @@ body {
   background-color: var(--main-bg-color);
 }
 
+header{
+  position: fixed;
+  height: 85%;
+}
+
 .main-container{
   height: 570px;
 }

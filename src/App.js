@@ -6,11 +6,11 @@ function App() {
   return (
     <>
       <div className='main-container container mt-5'>
-        <section className='row h-100'>
-          <div className='col-1 h-100'>
+        <section className='row'>
+          <div className='col-1'>
             <Navbar />
           </div>
-          <div className='col-11 h-100'>
+          <div className='col-11'>
             
           </div>
         </section>
