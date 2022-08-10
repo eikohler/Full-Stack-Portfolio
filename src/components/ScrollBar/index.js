@@ -57,6 +57,8 @@ class ScrollBar extends Component {
         this.trackHeight = document.querySelector('.scroll-track').clientHeight - this.btnHeight;
         this.percentDiff = this.trackHeight / this.totalHeight;
 
+        $('.scroll-btn').css('top', `${window.scrollY*this.percentDiff}px`);
+
         window.addEventListener('scroll', this.updateHeight);        
         window.addEventListener('mousemove', this.moveScroll); 
         window.addEventListener('mouseup', this.handleEvent); 
