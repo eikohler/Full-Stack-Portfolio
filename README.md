@@ -9,3 +9,4 @@
 - Went for a minimalist approach on design, something clean
 
 ![Screen Shot](src/assets/images/screenshot.jpg?raw=true "Screen Shot")
+![Screen Shot Dark](src/assets/images/screenshot-dark.jpg?raw=true "Screen Shot")
