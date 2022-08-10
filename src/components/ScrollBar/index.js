@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import $ from 'jquery';
 
-class ScrollBar extends React.Component {
+class ScrollBar extends Component {
     constructor() {
         super();
         this.totalHeight = 0;
         this.trackHeight = 0;
-    }    
+        this.percentDiff = 0;
+        this.updateHeight = this.updateHeight.bind(this);
+      }
 
-    updateHeight(){
-        // console.log(window.scrollY);
+    updateHeight(){        
         $('.scroll-btn').css('top', `${window.scrollY}px`);
     }
 
-    componentDidMount() {
+    componentDidMount(){
         this.totalHeight = $(document).height();
         this.trackHeight = $('.scroll-track').height();
-
-        console.log(this.totalHeight);
-        console.log(this.trackHeight);
+        this.percentDiff = this.trackHeight / this.totalHeight;
 
         window.addEventListener('scroll', this.updateHeight);        
     }
