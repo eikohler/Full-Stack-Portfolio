@@ -1,36 +1,40 @@
-import React, { useEffect } from 'react';
-// import $ from 'jquery';
+import React from 'react';
+import $ from 'jquery';
 
-function ScrollBar() {
-    // const numberOfSections = $('.section-container').length;
-    // console.log(numberOfSections);
+class ScrollBar extends React.Component {
+    constructor() {
+        super();
+        this.totalHeight = 0;
+        this.trackHeight = 0;
+    }    
 
-    // const numberOfSections = 4;
-
-    const updateHeight = () => {
-        console.log(window.scrollY);
-        // if (window.scrollY > 1200) {
-        //   setX(classes.Swipe);
-        // }
-                 
-        // if (window.scrollY > 927) {
-        //   setNavColor('red');
-        // }
-            
-        // setNavColor(null);
+    updateHeight(){
+        // console.log(window.scrollY);
+        $('.scroll-btn').css('top', `${window.scrollY}px`);
     }
 
-    useEffect(() => {
-        window.addEventListener('scroll', updateHeight);        
-        return () => window.removeEventListener('scroll', updateHeight);
-    },[]);
+    componentDidMount() {
+        this.totalHeight = $(document).height();
+        this.trackHeight = $('.scroll-track').height();
 
-  return (
-    <div className='scroll-track'>
-        <div className='scroll-btn'>
-        </div>
-    </div>
-  );
+        console.log(this.totalHeight);
+        console.log(this.trackHeight);
+
+        window.addEventListener('scroll', this.updateHeight);        
+    }
+
+    componentWillUnmount() { 
+        window.removeEventListener('scroll', this.updateHeight); 
+    }
+
+    render() {
+        return (
+            <div className='scroll-track'>
+                <div className='scroll-btn'>
+                </div>
+            </div>
+        );
+    }    
 }
 
 export default ScrollBar;
