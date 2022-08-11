@@ -4,6 +4,7 @@ import Navbar from './components/NavBar';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
+import Work from "./components/Work";
 import ScrollBar from "./components/ScrollBar";
 import useOnScreen from "./hooks/useOnScreen"
 
@@ -42,7 +43,7 @@ function App() {
                       <About />
                     </section>
                     <section id="work" className="section-container" ref={ref3}>
-                      <Home />
+                      <Work />
                     </section>
                     <section id="contact" className="section-container" ref={ref4}>
                       <Home />

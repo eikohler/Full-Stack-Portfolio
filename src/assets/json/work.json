@@ -1,0 +1,76 @@
+{
+    "works": [
+      {
+        "image": "demo.gif",
+        "name": "Weather App",
+        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
+        "app": "https://eikohler.github.io/Weather-Application/",
+        "github": "https://github.com/eikohler/Weather-Application",
+        "summaryPoints": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
+            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
+        ]
+      },      
+      {
+        "image": "demo.gif",
+        "name": "Weather App",
+        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
+        "app": "https://eikohler.github.io/Weather-Application/",
+        "github": "https://github.com/eikohler/Weather-Application",
+        "summaryPoints": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
+            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
+        ]
+      },      
+      {
+        "image": "demo.gif",
+        "name": "Weather App",
+        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
+        "app": "https://eikohler.github.io/Weather-Application/",
+        "github": "https://github.com/eikohler/Weather-Application",
+        "summaryPoints": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
+            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
+        ]
+      },      
+      {
+        "image": "demo.gif",
+        "name": "Weather App",
+        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
+        "app": "https://eikohler.github.io/Weather-Application/",
+        "github": "https://github.com/eikohler/Weather-Application",
+        "summaryPoints": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
+            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
+        ]
+      },      
+      {
+        "image": "demo.gif",
+        "name": "Weather App",
+        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
+        "app": "https://eikohler.github.io/Weather-Application/",
+        "github": "https://github.com/eikohler/Weather-Application",
+        "summaryPoints": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
+            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
+        ]
+      },      
+      {
+        "image": "demo.gif",
+        "name": "Weather App",
+        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
+        "app": "https://eikohler.github.io/Weather-Application/",
+        "github": "https://github.com/eikohler/Weather-Application",
+        "summaryPoints": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
+            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
+        ]
+      }
+    ]
+  }
