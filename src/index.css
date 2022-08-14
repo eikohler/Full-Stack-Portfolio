@@ -241,6 +241,7 @@ footer a, footer a:hover{
   bottom: 20px;
   animation: down-arrow 2s infinite ease-in-out;
   cursor: pointer;
+  transition: 0.2s color;
 }
 
 .modal-image{
@@ -256,7 +257,11 @@ footer a, footer a:hover{
 .modal-text a{
   margin-left: 2em;
   font-size: var(--normal-font-size);
-  font-weight: var(--normal-font-weight);
+  transition: 0.2s color;
+}
+
+.modal-text a:hover, .modal-image-container span:hover{
+  color: #3697fc;
 }
 
 .modal-text p{
