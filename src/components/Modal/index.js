@@ -1,18 +1,29 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Modal = ({ onClose, currentWork }) => {
     const {image, name, tools, app, github, summaryPoints} = currentWork;
+
+    const bottomRef = useRef(null);
+
+    const jumpToBottom = () => {
+        bottomRef.current?.scrollIntoView({behavior: 'smooth'});
+    }
 
     return (
         <div className='modal-screen'>
             <div className='modal-close' onClick={onClose}></div>
             <div className='modal-container'>
-                <img
-                    src={require(`../../assets/gifs/${image}`)}
-                    alt={name}
-                    className="modal-image"                
-                />
-                <section className='row modal-text m-0 p-4'>
+                <div className='modal-image-container'>
+                    <section><span onClick={jumpToBottom}><FontAwesomeIcon icon={faChevronDown} size="2x" /></span></section>
+                    <img
+                        src={require(`../../assets/gifs/${image}`)}
+                        alt={name}
+                        className="modal-image"                
+                    />
+                </div>
+                <section className='row modal-text m-0 p-4' ref={bottomRef}>
                     <div className='col-md-8'>
                         <h4>Tools</h4>
                         <p>{tools}</p>
