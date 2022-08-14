@@ -9,7 +9,7 @@ function About() {
         with React with an interest in design.`}</p>
         <p>{`When I'm not building something I'm usually
         going for a run, at the gym or playing guitar 😄`}</p>
-        <p>{`You can see some of my projects down below 👇`}</p>
+        <p>{`See some of my projects down below 👇`}</p>
     </div>
   );
 }

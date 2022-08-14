@@ -9,7 +9,7 @@ import ScrollBar from "./components/ScrollBar";
 import useOnScreen from "./hooks/useOnScreen"
 
 function App() {
-  const margin = "-400px";
+  const margin = "-50%";
   
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -22,9 +22,9 @@ function App() {
 
   return (
     <>
-      <div className='container my-5'>
+      <div className='container'>
         <section className='row justify-content-between'>
-          <div className='col-1'>
+          <div className='col-1 my-5'>
             <Navbar 
             me={me}
             about={about}
@@ -51,7 +51,7 @@ function App() {
                     <div className='bottom-spacer'></div>
                   </main>
                 </div>
-                <div className='col-1'>
+                <div className='col-1  my-5 d-flex justify-content-center'>
                   <ScrollBar />
                 </div>
             </section>            

@@ -60,7 +60,7 @@ nav a:hover{
 }
 
 nav span{
-  margin: 1rem 0px;
+  margin: 0rem 0px 1rem;
   display: block;
   color: var(--secondary-text-color);
   font-size: var(--normal-font-size);
@@ -95,7 +95,7 @@ footer a, footer a:hover{
 /* Footer */
 
 .section-container{
-  height: 80vh;
+  min-height: 91vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +117,7 @@ footer a, footer a:hover{
 /* Home */
 
 .bottom-spacer{
-  height: 6rem;
+  height: 9vh;
 }
 
 /* Scroll */
