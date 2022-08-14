@@ -11,7 +11,6 @@ function Work() {
   const toggleModal = (work) => {
     setCurrentWork(work);
     setModalOpen(!modalOpen);
-    console.log(modalOpen);
   }
     
   return (
