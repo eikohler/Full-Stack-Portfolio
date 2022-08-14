@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown, faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Modal = ({ onClose, currentWork }) => {
     const {image, name, tools, app, github, summaryPoints} = currentWork;
@@ -29,8 +30,12 @@ const Modal = ({ onClose, currentWork }) => {
                         <p>{tools}</p>
                     </div>
                     <div className='col-md-4 text-right'>
-                        <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a href={app} target="_blank" rel="noopener noreferrer">App</a>
+                        <a href={github} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} size="2x" />
+                        </a>
+                        <a href={app} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLaptop} size="2x" />
+                        </a>
                     </div>
                     <div className='col-12 mt-4'>
                         <h4>Summary</h4>
