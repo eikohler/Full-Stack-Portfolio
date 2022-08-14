@@ -1,12 +1,27 @@
-import React from 'react';
-import db from '../../assets/json/work.json'
+import React, { useState } from 'react';
+import db from '../../assets/json/work.json';
 
 function Work() {
-    console.log(db.works[0].name);
+  const [works] = useState(db.works);
+    
   return (
-    <div>
-        
-    </div>
+    <section className="row">
+      {works.map((work) => (
+        <div className='col-md-4 p-2' key={work.name}>
+          <div className='gallery-image-container'>
+            <h3>{work.name}</h3>
+            <div className='overlay'></div>
+            <img
+              src={require(`../../assets/gifs/${work.image}`)}
+              alt={work.name}
+              className="gallery-image"
+              // onClick={() => toggleModal(work)}
+              key={work.name}
+            />
+          </div>
+        </div>
+      ))}
+    </section>
   );
 }
 

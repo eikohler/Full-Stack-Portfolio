@@ -7,6 +7,7 @@
   --highlight-bg-color: #0000ff;
   --dark-bg-color: #000;
   --main-text-color: #000;
+  --main-text-color-invert: #fff;
   --secondary-text-color: #ccc;
   --footer-secondary-text-color: #ccc;
   --highlight-text-color: #0000ff;
@@ -21,6 +22,7 @@
   --highlight-bg-color: #0000ff;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
+  --main-text-color-invert: #fff;
   --secondary-text-color: #ccc;
   --footer-secondary-text-color: #333;
   --highlight-text-color: #3697fc;
@@ -142,3 +144,40 @@ footer a, footer a:hover{
   color: var(--main-text-color);
 }
 /* About */
+
+/* Gallery */
+.gallery-image-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.gallery-image-container h3{
+  position: absolute;
+  color: var(--main-text-color-invert);
+  opacity: 0;
+  z-index: 9;
+  transition: 0.1s opacity;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  opacity: 0;
+  transition: 0.1s opacity;
+}
+
+.gallery-image-container:hover .overlay, .gallery-image-container:hover h3{
+  opacity: 1;
+}
+/* Gallery */
