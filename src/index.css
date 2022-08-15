@@ -295,11 +295,12 @@ footer a, footer a:hover{
 /* Arrow Animation */
 
 /* Contact form */
-#contact{
+#contact h2{
   color: var(--main-text-color);
 }
 
 #contact-form input, #contact-form textarea{
+  color: var(--main-text-color);
   width: 100%;
   border: 1px solid var(--border-color);
   font-size: var(--normal-font-size);
@@ -317,7 +318,7 @@ footer a, footer a:hover{
   color: #fff;
   border: none;
   font-size: var(--normal-font-size);
-  font-weight: var(--normal-font-weight);
+  font-weight: 600;
   padding: 8px 2.5em;
   transition: 0.2s background-color;
 }
