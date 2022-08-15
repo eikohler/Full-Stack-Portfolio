@@ -278,7 +278,7 @@ footer a, footer a:hover{
 
 /* Modal Scroll Bar */
 .modal-container::-webkit-scrollbar {
-  width: 20px;
+  width: 12px;
 }
   
 /* Track */
@@ -442,6 +442,9 @@ footer a, footer a:hover{
   #contact-form button {
     font-size: 20px;
     padding: 5px 2em;
+  }
+  .modal-container::-webkit-scrollbar {
+    width: 10px;
   }
 }
 /* Mobile Responsive */
