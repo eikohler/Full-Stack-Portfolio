@@ -224,6 +224,7 @@ footer a, footer a:hover{
 .modal-image-container{ 
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .modal-image-container section{
@@ -238,12 +239,16 @@ footer a, footer a:hover{
   color: #fff;
 }
 
-.modal-image-container span{
+.modal-image-container span.down-arrow-icon{
   position: absolute;
   bottom: 20px;
   animation: down-arrow 2s infinite ease-in-out;
   cursor: pointer;
   transition: 0.2s color;
+}
+
+.modal-image-container span.exit-icon{
+  display: none;
 }
 
 .modal-image{
@@ -358,6 +363,85 @@ footer a, footer a:hover{
   }
   header{
     height: 75%;
+  }
+  .modal-container {
+    width: 85%;
+    height: 50%;
+  }
+  .modal-links{
+    order: -1;
+    margin-bottom: 10px;
+  }
+  .modal-title{
+    order: -2;
+  }
+  .modal-text a {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  #home h1 {
+    font-size: 2rem;
+    padding: 3px 18px;
+  }
+  #home h2 {
+    font-size: 1.5rem;
+  }
+  nav span {
+    font-size: 20px;
+  }
+  .modal-container {
+    width: 100%;
+    height: 100%;
+  }
+  .modal-image-container span {
+    font-size: 18px;
+  }
+  .modal-image-container, .modal-image{
+    height: auto;
+  }
+  .modal-image-container section {
+    height: auto;
+    bottom: auto;
+    justify-content: flex-start;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+    padding: 3px 8px;
+  }
+  .modal-image-container section .down-arrow-icon{
+    display: none;
+  }
+  .modal-image-container span.exit-icon{
+    display: block;
+  }
+  .modal-links {
+    margin-bottom: 2em;
+  }
+  .modal-text{
+    text-align: center;
+  }
+  .modal-text ul{
+    list-style: none;
+    padding-left: 0px;
+  }
+  #about p {
+    font-size: 18px;
+  }
+  #contact h2 {
+    font-size: 20px;
+  }
+  #contact-form input, #contact-form textarea {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  #contact-form input[type=text]{
+    margin-bottom: 15px;
+  }
+  #contact-form button {
+    font-size: 20px;
+    padding: 5px 2em;
   }
 }
 /* Mobile Responsive */

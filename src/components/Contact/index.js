@@ -9,10 +9,10 @@ function Contact() {
         </div>
         <form id="contact-form">
             <section className='row my-4'>
-                <div className='col-md-6'>
+                <div className='col-sm-6'>
                     <input placeholder="Name" type="text" name="name" />
                 </div>
-                <div className='col-md-6'>
+                <div className='col-sm-6'>
                     <input placeholder="Email" type="email" name="email" />
                 </div>
                 <div className='col-12 mt-3'>

@@ -20,7 +20,7 @@ function Work() {
       )}
       <section className="row">
         {works.map((work, i) => (
-          <div className='col-md-4 p-3' key={i+" "+work.name+" col"}>
+          <div className='col-lg-4 col-sm-6 p-3' key={i+" "+work.name+" col"}>
             <div className='gallery-image-container' key={i+" "+work.name+" container"} 
             onClick={() => toggleModal(work)}>
               <h3 key={i+" "+work.name+" title"}>{work.name}</h3>

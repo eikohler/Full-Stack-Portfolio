@@ -25,7 +25,7 @@ function App() {
     <>
       <div className='container'>
         <section className='row justify-content-between'>
-          <div className='col-1 my-5'>
+          <div className='col-md-1 col-2 my-5'>
             <Navbar 
             me={me}
             about={about}
@@ -33,9 +33,9 @@ function App() {
             contact={contact}
             />
           </div>
-          <div className='col-10'>
+          <div className='col-md-10 col-9'>
             <section className='row'>
-                <div className='col-11'>
+                <div className='col-md-11'>
                   <main>
                     <section id="home" className="section-container" ref={ref1}>
                       <Home />
@@ -52,7 +52,7 @@ function App() {
                     <div className='bottom-spacer'></div>
                   </main>
                 </div>
-                <div className='col-1  my-5 d-flex justify-content-center'>
+                <div className='col-1  my-5 justify-content-center d-md-flex d-none'>
                   <ScrollBar />
                 </div>
             </section>            
