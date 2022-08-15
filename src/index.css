@@ -4,13 +4,13 @@
 
 :root {
   --main-bg-color: #fff;
-  --highlight-bg-color: #0000ff;
+  --highlight-bg-color: #3697fc;
   --dark-bg-color: #000;
   --main-text-color: #000;
   --main-text-color-invert: #fff;
   --secondary-text-color: #ccc;
   --footer-secondary-text-color: #ccc;
-  --highlight-text-color: #0000ff;
+  --highlight-text-color: #3697fc;
   --main-font: 'Barlow', sans-serif;
 
   --normal-font-size: 23px;
@@ -21,7 +21,7 @@
 
 [data-theme="dark"] {
   --main-bg-color: #000;
-  --highlight-bg-color: #0000ff;
+  --highlight-bg-color: #3697fc;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
   --main-text-color-invert: #fff;
@@ -256,7 +256,7 @@ footer a, footer a:hover{
 
 .modal-text a{
   margin-left: 2em;
-  font-size: var(--normal-font-size);
+  font-size: 20px;
   transition: 0.2s color;
 }
 
@@ -281,10 +281,6 @@ footer a, footer a:hover{
   
 /* Handle */
 .modal-container::-webkit-scrollbar-thumb {
-  background: #0000ff;
-}
-
-.modal-container::-webkit-scrollbar-thumb:hover{
   background: #3697fc;
 }
 /* Modal Scroll Bar */
