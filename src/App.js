@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 import ScrollBar from "./components/ScrollBar";
 import useOnScreen from "./hooks/useOnScreen"
 
@@ -46,7 +47,7 @@ function App() {
                       <Work />
                     </section>
                     <section id="contact" className="section-container" ref={ref4}>
-                      <Home />
+                      <Contact />
                     </section>
                     <div className='bottom-spacer'></div>
                   </main>

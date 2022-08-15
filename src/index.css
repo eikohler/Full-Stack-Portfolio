@@ -7,7 +7,6 @@
   --highlight-bg-color: #3697fc;
   --dark-bg-color: #000;
   --main-text-color: #000;
-  --main-text-color-invert: #fff;
   --secondary-text-color: #ccc;
   --footer-secondary-text-color: #ccc;
   --highlight-text-color: #3697fc;
@@ -17,6 +16,8 @@
   --normal-font-weight: 500;
 
   --smaller-font-size: 20px;
+
+  --border-color: #707070;
 }
 
 [data-theme="dark"] {
@@ -24,7 +25,6 @@
   --highlight-bg-color: #3697fc;
   --dark-bg-color: #fff;
   --main-text-color: #fff;
-  --main-text-color-invert: #fff;
   --secondary-text-color: #ccc;
   --footer-secondary-text-color: #333;
   --highlight-text-color: #3697fc;
@@ -34,6 +34,8 @@
   --normal-font-weight: 500;
 
   --smaller-font-size: 20px;
+
+  --border-color: #bdbdbd;
 }
 
 body {
@@ -161,7 +163,7 @@ footer a, footer a:hover{
 
 .gallery-image-container h3{
   position: absolute;
-  color: var(--main-text-color-invert);
+  color: #fff;
   opacity: 0;
   z-index: 9;
   transition: 0.1s opacity;
@@ -291,3 +293,41 @@ footer a, footer a:hover{
   10%, 50% {bottom: 0px;}
 }
 /* Arrow Animation */
+
+/* Contact form */
+#contact{
+  color: var(--main-text-color);
+}
+
+#contact-form input, #contact-form textarea{
+  width: 100%;
+  border: 1px solid var(--border-color);
+  font-size: var(--normal-font-size);
+  padding: 10px 15px;
+  font-weight: var(--normal-font-weight);
+  background-color: transparent;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder{
+  color: var(--main-text-color);
+}
+
+#contact-form button{
+  background-color: #0000FF;
+  color: #fff;
+  border: none;
+  font-size: var(--normal-font-size);
+  font-weight: var(--normal-font-weight);
+  padding: 8px 2.5em;
+  transition: 0.2s background-color;
+}
+
+#contact-form button:hover{
+  background-color: var(--highlight-bg-color);
+}
+
+#contact-form textarea{
+  min-height: 60px;
+  max-height: 200px;
+}
+/* Contact form */
