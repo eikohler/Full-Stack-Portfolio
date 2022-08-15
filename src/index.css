@@ -332,3 +332,18 @@ footer a, footer a:hover{
   max-height: 200px;
 }
 /* Contact form */
+
+/* Mobile Responsive */
+@media only screen and (max-width: 992px) {
+  #home h1 {    
+    font-size: 4rem;
+  }
+  #home h2 {
+    font-size: 3rem;
+  }
+  #about p {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+}
+/* Mobile Responsive */

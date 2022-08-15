@@ -25,6 +25,9 @@ const Modal = ({ onClose, currentWork }) => {
                     />
                 </div>
                 <section className='row modal-text m-0 p-4' ref={bottomRef}>
+                    <div className='col-12 text-center mb-3'>
+                        <h3>{name}</h3>
+                    </div>
                     <div className='col-md-8'>
                         <h4>Tools</h4>
                         <p>{tools}</p>
