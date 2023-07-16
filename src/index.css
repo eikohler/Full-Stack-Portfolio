@@ -1,7 +1,3 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap');
-/* --- */
-
 :root {
   --main-bg-color: #fff;
   --highlight-bg-color: #3697fc;
@@ -38,6 +34,10 @@
   --border-color: #bdbdbd;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   margin: 0;
   font-family: var(--main-font);
@@ -49,7 +49,8 @@ body {
 /* Nav */
 header{
   position: fixed;
-  height: 80%;
+  height: 80vh;
+  margin-top: 5vh;
 }
 
 .mode-switch{
@@ -145,9 +146,8 @@ footer a, footer a:hover{
 
 /* About */
 #about p{
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 300;
   color: var(--main-text-color);
 }
 /* About */

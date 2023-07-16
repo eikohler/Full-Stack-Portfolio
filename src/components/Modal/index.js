@@ -4,7 +4,7 @@ import { faChevronDown, faLaptop, faXmark } from '@fortawesome/free-solid-svg-ic
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Modal = ({ onClose, currentWork }) => {
-    const {image, name, tools, app, github, summaryPoints} = currentWork;
+    const {image, name, tools, app} = currentWork;
 
     const bottomRef = useRef(null);
 
@@ -22,7 +22,7 @@ const Modal = ({ onClose, currentWork }) => {
                         <span className='down-arrow-icon' onClick={jumpToBottom}><FontAwesomeIcon icon={faChevronDown} size="2x" /></span>
                     </section>
                     <img
-                        src={require(`../../assets/gifs/${image}`)}
+                        src={require(`../../assets/images/websites/${image}`)}
                         alt={name}
                         className="modal-image"                
                     />
@@ -35,24 +35,12 @@ const Modal = ({ onClose, currentWork }) => {
                         <h4>Tools</h4>
                         <p>{tools}</p>
                     </div>
-                    <div className='col-md-4 text-md-right text-center modal-links'>
-                        <a href={github} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faGithub} size="2x" />
-                        </a>
+                    <div className='col-md-4 text-md-right text-center modal-links'>                        
                         <a href={app} target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLaptop} size="2x" />
                         </a>
                     </div>
-                    <div className='col-12 mt-4'>
-                        <h4>Summary</h4>
-                        <ul>
-                            {summaryPoints.map((point, i) => (
-                                <li key={i}>
-                                    <p key={i+" text"}>{point}</p>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    
                 </section>
             </div>
         </div>

@@ -20,15 +20,15 @@ function Work() {
       )}
       <section className="row">
         {works.map((work, i) => (
-          <div className='col-lg-4 col-sm-6 p-3' key={i+" "+work.name+" col"}>
+          <div className='col-md-6 p-3' key={i+" "+work.name+" col"}>
             <div className='gallery-image-container' key={i+" "+work.name+" container"} 
             onClick={() => toggleModal(work)}>
-              <h3 key={i+" "+work.name+" title"}>{work.name}</h3>
+              <h3 className='text-center' key={i+" "+work.name+" title"}>{work.name}</h3>
               <div className='overlay'></div>
               <img
-                src={require(`../../assets/gifs/${work.image}`)}
+                src={require(`../../assets/images/websites/${work.image}`)}
                 alt={work.name}
-                className="gallery-image"                
+                className="gallery-image"
                 key={i+" "+work.name+" image"}
               />
             </div>

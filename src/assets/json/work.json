@@ -1,76 +1,34 @@
 {
     "works": [
       {
-        "image": "demo.gif",
-        "name": "Weather App",
-        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
-        "app": "https://eikohler.github.io/Weather-Application/",
-        "github": "https://github.com/eikohler/Weather-Application",
-        "summaryPoints": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
-            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
-        ]
-      },      
+        "image": "kipling.JPG",
+        "name": "Kipling Media",
+        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
+        "app": "https://kiplingmedia.com/"
+      },
       {
-        "image": "demo.gif",
-        "name": "Weather App",
-        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
-        "app": "https://eikohler.github.io/Weather-Application/",
-        "github": "https://github.com/eikohler/Weather-Application",
-        "summaryPoints": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
-            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
-        ]
-      },      
+        "image": "nash.JPG",
+        "name": "Nash Collective Shop",
+        "tools": "HTML, CSS, JS, Liquid, Bootstrap, jQuery, Shopify",
+        "app": "https://the-nashcollective.com/"
+      },
       {
-        "image": "demo.gif",
-        "name": "Weather App",
-        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
-        "app": "https://eikohler.github.io/Weather-Application/",
-        "github": "https://github.com/eikohler/Weather-Application",
-        "summaryPoints": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
-            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
-        ]
-      },      
+        "image": "ltwealth.JPG",
+        "name": "LT Wealth",
+        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
+        "app": "https://ltwealth.ca/"
+      },
       {
-        "image": "demo.gif",
-        "name": "Weather App",
-        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
-        "app": "https://eikohler.github.io/Weather-Application/",
-        "github": "https://github.com/eikohler/Weather-Application",
-        "summaryPoints": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
-            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
-        ]
-      },      
+        "image": "mciver.JPG",
+        "name": "McIver Capital Management",
+        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
+        "app": "https://www.mcivercapital.com/"
+      },
       {
-        "image": "demo.gif",
-        "name": "Weather App",
-        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
-        "app": "https://eikohler.github.io/Weather-Application/",
-        "github": "https://github.com/eikohler/Weather-Application",
-        "summaryPoints": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
-            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
-        ]
-      },      
-      {
-        "image": "demo.gif",
-        "name": "Weather App",
-        "tools": "HTML, CSS, JS, React, Node, Express, MongoDB, Bootstrap",
-        "app": "https://eikohler.github.io/Weather-Application/",
-        "github": "https://github.com/eikohler/Weather-Application",
-        "summaryPoints": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at suscipit nunc. Aliquam et augue fringilla, porta sapien sagittis, rutrum enim.",
-            "Aliquam vitae tincidunt mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-            "Maecenas vel ex suscipit ligula rhoncus feugiat. Proin ac erat vel mauris ultrices pharetra nec in leo."
-        ]
+        "image": "mmg.JPG",
+        "name": "My Mental Game",
+        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
+        "app": "https://mymentalgame.com/"
       }
     ]
   }
