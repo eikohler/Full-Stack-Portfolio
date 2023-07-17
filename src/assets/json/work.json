@@ -1,34 +1,34 @@
 {
     "works": [
       {
-        "image": "kipling.JPG",
+        "image": "kipling.png",
         "name": "Kipling Media",
-        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
-        "app": "https://kiplingmedia.com/"
+        "cms": "WordPress",
+        "url": "https://kiplingmedia.com/"
       },
       {
-        "image": "nash.JPG",
+        "image": "nash.png",
         "name": "Nash Collective Shop",
-        "tools": "HTML, CSS, JS, Liquid, Bootstrap, jQuery, Shopify",
-        "app": "https://the-nashcollective.com/"
+        "cms": "Shopify",
+        "url": "https://the-nashcollective.com/"
       },
       {
-        "image": "ltwealth.JPG",
+        "image": "ltwealth.png",
         "name": "LT Wealth",
-        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
-        "app": "https://ltwealth.ca/"
+        "cms": "WordPress",
+        "url": "https://ltwealth.ca/"
       },
       {
-        "image": "mciver.JPG",
+        "image": "mciver.png",
         "name": "McIver Capital Management",
-        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
-        "app": "https://www.mcivercapital.com/"
+        "cms": "WordPress",
+        "url": "https://www.mcivercapital.com/"
       },
       {
-        "image": "mmg.JPG",
+        "image": "mmg.png",
         "name": "My Mental Game",
-        "tools": "HTML, CSS, JS, PHP, Bootstrap, jQuery, WordPress, ACF",
-        "app": "https://mymentalgame.com/"
+        "cms": "WordPress",
+        "url": "https://mymentalgame.com/"
       }
     ]
   }

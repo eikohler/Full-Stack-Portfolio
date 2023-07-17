@@ -8,7 +8,8 @@ function About() {
         building and growing eCommerce platforms with advanced skills in HTML, CSS, JavaScript, 
         jQuery, Bootstrap, React and PHP.</p>
         <p>My background is in Computer Science and Visual Arts from Brock University. 
-          As well, I've completed the Full Stack Coding BootCamp from Carleton University.
+          As well, I've completed the Full Stack Coding BootCamp from Carleton University 
+          and further went on to assist in teaching the course at the University of Richmond.
           I have 2+ years experience working alongside designers 
           and developers to bring client's ideas and design concepts to life.</p>        
         <p>See my past work projects <a href="#work">below.</a></p>

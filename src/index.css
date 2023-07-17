@@ -7,8 +7,8 @@
   --footer-secondary-text-color: #ccc;
   --highlight-text-color: #3697fc;
 
-  --main-font: 'Barlow', sans-serif;
-  --title-font: 'Crimson Text', serif;
+  --heading-font: 'Barlow', sans-serif;
+  --main-font: 'Crimson Text', serif;
 
   --normal-font-size: 20px;
   --normal-font-weight: 500;
@@ -29,17 +29,26 @@ html{
 a{
   transition: 0.2s all;
   color: var(--main-text-color);
+  text-decoration: none;
 }
 
-a:hover{
+a:not(.no-highlight):hover{
   color: #fff;
   background-color: var(--highlight-bg-color);
   padding: 0px 5px;
   text-decoration: none;
 }
 
+a.no-highlight:hover{
+  text-decoration: none;
+}
+
 p{
   color: var(--main-text-color);
+}
+
+main{
+  font-family: var(--main-font);
 }
 
 .bounce {
@@ -61,10 +70,11 @@ p{
 
 body {
   margin: 0;
-  font-family: var(--main-font);
+  font-family: var(--heading-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-bg-color);
+  font-size: var(--normal-font-size);
 }
 
 main{
@@ -89,6 +99,7 @@ header{
   justify-content: center;
   width: 45px;
   height: 45px;
+  font-size: 16px;
 }
 
 .mode-switch:hover{
@@ -97,12 +108,9 @@ header{
   transform: scale(1.1);
 }
 
-
-
 nav a{
   margin-bottom: 5px;
   color: var(--secondary-text-color);
-  font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
 }
 
@@ -127,7 +135,6 @@ footer{
 
 footer a{
   color: var(--footer-secondary-text-color);
-  font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
   padding: 0px 5px;
 }
@@ -146,9 +153,6 @@ footer a:hover{
 }
 
 /* Home */
-#home h1, #home h2{
-  font-family: var(--title-font);
-}
 #home h1{
   background-color: var(--highlight-bg-color);
   color: #fff;
@@ -186,7 +190,6 @@ footer a:hover{
 #about p{
   font-size: 18px;
   color: var(--main-text-color);
-  font-family: var(--title-font);
 }
 
 #about span{
@@ -203,150 +206,33 @@ footer a:hover{
 }
 /* About */
 
-/* Gallery */
-.gallery-image-container{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.gallery-image-container h3{
-  position: absolute;
-  color: #fff;
-  opacity: 0;
-  z-index: 9;
-  transition: 0.2s opacity;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 0px 10px;
-  font-size: 22px;
-}
-
-.full-width .gallery-image-container h3{
-  font-size: 40px;
-}
-
-.gallery-image {
+/* Work */
+#work img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transition: 0.2s all;
 }
 
-.overlay{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  opacity: 0;
-  transition: 0.2s opacity;
-}
-
-.gallery-image-container:hover .overlay, .gallery-image-container:hover h3{
-  opacity: 1;
-}
-/* Gallery */
-
-/* Modal */
-.modal-screen{
-  position: fixed;
-  width: 100%;
-  height: 100%;  
-  z-index: 999;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-close{
-  background-color: rgba(0, 0, 0, 0.5);  
-  position: absolute;
-  top: 0px;
-  left:0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9;
-}
-
-.modal-container{
-  width: 70%;
-  height: 60%;
-  background-color: #000;
-  position: relative;
-  z-index: 99;
-  overflow-y: scroll;
-}
-
-.modal-image-container{ 
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.modal-image-container section{
-  position: absolute;
-  width: 100%;
-  height: 50%;
-  font-size: 28px;
-  bottom: 0px;
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+#work .work-info span{
+  padding: 0px 5px;
+  background-color: var(--highlight-bg-color);
   color: #fff;
 }
 
-.modal-image-container span.down-arrow-icon{
-  position: absolute;
-  bottom: 20px;
-  animation: down-arrow 2s infinite ease-in-out;
-  cursor: pointer;
-  transition: 0.2s color;
+#work p{
+  font-size: 18px;
 }
 
-.modal-image-container span.exit-icon{
-  display: none;
+#work .work-image-wrapper:hover img{
+  transform: scale(1.05);
 }
+/* Work */
 
-.modal-image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.modal-text, .modal-text a{
-  color: #fff;
-}
-
-.modal-text a{
-  margin-left: 2em;
-  font-size: 20px;
-  transition: 0.2s color;
-}
-
-.modal-text a:hover, .modal-image-container span:hover{
-  color: #3697fc;
-}
-
-.modal-text p{
-  font-size: var(--smaller-font-size);
-}
-/* Modal */
-
-
-/* Down Arrow Animation */
-@keyframes down-arrow {
-  0%, 30%, 70%, 100% {bottom: 20px;}
-  10%, 50% {bottom: 0px;}
-}
-/* Arrow Animation */
 
 /* Contact form */
 #contact a{
   margin-bottom: 10px;
   font-size: 26px;
-  font-family: var(--title-font);
   padding: 0px 5px;
 }
 
@@ -354,100 +240,3 @@ footer a:hover{
   transform: scale(1.1) perspective(1px);
 }
 /* Contact form */
-
-/* Mobile Responsive */
-@media only screen and (max-width: 992px) {
-  #home h1 {    
-    font-size: 4rem;
-  }
-  #home h2 {
-    font-size: 3rem;
-  }
-  #about p {
-    font-size: 23px;
-    margin-bottom: 20px;
-  }
-  .gallery-image-container h3 {
-    font-size: 20px;
-  }
-  .gallery-image {
-    height: 150px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 700px;
-  }
-  header{
-    height: 75%;
-  }
-  .modal-container {
-    width: 85%;
-    height: 50%;
-  }
-  .modal-links{
-    order: -1;
-    margin-bottom: 10px;
-  }
-  .modal-title{
-    order: -2;
-  }
-  .modal-text a {
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 619px) {
-  #home h1 {
-    font-size: 2rem;
-    padding: 3px 18px;
-  }
-  #home h2 {
-    font-size: 1.5rem;
-  }
-  nav span {
-    font-size: 20px;
-  }
-  .modal-container {
-    width: 100%;
-    height: 100%;
-  }
-  .modal-image-container span {
-    font-size: 18px;
-  }
-  .modal-image-container, .modal-image{
-    height: auto;
-  }
-  .modal-image-container section {
-    height: auto;
-    bottom: auto;
-    justify-content: flex-start;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
-    padding: 3px 8px;
-  }
-  .modal-image-container section .down-arrow-icon{
-    display: none;
-  }
-  .modal-image-container span.exit-icon{
-    display: block;
-  }
-  .modal-links {
-    margin-bottom: 2em;
-  }
-  .modal-text{
-    text-align: center;
-  }
-  .modal-text ul{
-    list-style: none;
-    padding-left: 0px;
-  }
-  #about p {
-    font-size: 18px;
-  }
-  #contact h2 {
-    font-size: 20px;
-  }  
-}
-/* Mobile Responsive */
