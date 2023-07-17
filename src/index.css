@@ -87,6 +87,7 @@ header{
   top: 0px;
   left: 0px;
   height: 91vh;
+  z-index: 99;
 }
 
 .mode-switch{
@@ -228,15 +229,30 @@ footer a:hover{
 }
 /* Work */
 
-
-/* Contact form */
-#contact a{
-  margin-bottom: 10px;
-  font-size: 26px;
-  padding: 0px 5px;
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  #home h1 {
+    font-size: 60px;
+  }
+  #home h2 {
+    font-size: 45px;
+  }
 }
 
-#contact a:hover{
-  transform: scale(1.1) perspective(1px);
+@media only screen and (max-width: 576px) {
+  #home h1 {
+    font-size: 45px;
+  }
+  #home h2 {
+    font-size: 34px;
+  }
+
+  .mode-switch {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    background-color: transparent !important;
+    color: var(--main-text-color) !important;
+  }
 }
-/* Contact form */
+/* Responsive */

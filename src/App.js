@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Work from "./components/Work";
-import Contact from "./components/Contact";
 import useOnScreen from "./hooks/useOnScreen"
 
 function App() {
@@ -14,29 +13,23 @@ function App() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
-  const ref4 = useRef(null);
   const me = useOnScreen(ref1, margin);
   const about = useOnScreen(ref2, margin);
   const work = useOnScreen(ref3, margin);
-  const contact = useOnScreen(ref4, margin);
-
   return (
     <>
-      <header className='container-fluid'>        
-        <section className='row mx-0 h-100'>
-          <div className='col-2 pl-4 pr-0 py-5 h-100 d-flex flex-column justify-content-between align-items-start'>
-            <Navbar 
-            me={me}
-            about={about}
-            work={work}
-            contact={contact}
-            />
-          </div>
-        </section>
+      <header className="pl-sm-3 pl-1">        
+        <div className='pl-lg-4 pl-0 py-sm-5 py-1 h-100 d-flex flex-column justify-content-between align-items-start'>
+          <Navbar 
+          me={me}
+          about={about}
+          work={work}
+          />
+        </div>
       </header>
       <main className='container-fluid'>        
         <section className='row mx-0 justify-content-center'>          
-          <div className='col-10 px-0'>
+          <div className='col-lg-10 col-sm-11 px-0'>
             <section id="home" className="section-container" ref={ref1}>
               <Home />
             </section>
@@ -45,9 +38,6 @@ function App() {
             </section>
             <section id="work" className="section-container" ref={ref3}>
               <Work />
-            </section>
-            <section id="contact" className="section-container" ref={ref4}>
-              <Contact />
             </section>
           </div>      
         </section>

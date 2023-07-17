@@ -1,0 +1,34 @@
+{
+  "works": [
+    {
+      "image": "kipling.png",
+      "name": "Kipling Media",
+      "cms": "WordPress",
+      "url": "https://kiplingmedia.com/"
+    },
+    {
+      "image": "nash.png",
+      "name": "Nash Collective Shop",
+      "cms": "Shopify",
+      "url": "https://the-nashcollective.com/"
+    },
+    {
+      "image": "ltwealth.png",
+      "name": "LT Wealth",
+      "cms": "WordPress",
+      "url": "https://ltwealth.ca/"
+    },
+    {
+      "image": "mciver.png",
+      "name": "McIver Capital Management",
+      "cms": "WordPress",
+      "url": "https://www.mcivercapital.com/"
+    },
+    {
+      "image": "mmg.png",
+      "name": "My Mental Game",
+      "cms": "WordPress",
+      "url": "https://mymentalgame.com/"
+    }
+  ]
+}
