@@ -18,9 +18,9 @@ function Work() {
       {modalOpen && (
         <Modal currentWork={currentWork} onClose={toggleModal} />
       )}
-      <section className="row">
+      <section className="row mx-0">
         {works.map((work, i) => (
-          <div className='col-md-6 p-3' key={i+" "+work.name+" col"}>
+          <div className={`${i < 1 ? 'col-12 full-width' : 'col-md-6'} px-2 mb-4`} key={i+" "+work.name+" col"}>
             <div className='gallery-image-container' key={i+" "+work.name+" container"} 
             onClick={() => toggleModal(work)}>
               <h3 className='text-center' key={i+" "+work.name+" title"}>{work.name}</h3>
