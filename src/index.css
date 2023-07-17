@@ -6,44 +6,53 @@
   --secondary-text-color: #ccc;
   --footer-secondary-text-color: #ccc;
   --highlight-text-color: #3697fc;
+
   --main-font: 'Barlow', sans-serif;
+  --title-font: 'Crimson Text', serif;
 
-  --normal-font-size: 23px;
+  --normal-font-size: 20px;
   --normal-font-weight: 500;
-
-  --smaller-font-size: 20px;
-
-  --border-color: #707070;
 }
 
 [data-theme="dark"] {
   --main-bg-color: #000;
   --highlight-bg-color: #3697fc;
   --dark-bg-color: #fff;
-  --main-text-color: #fff;
-  --secondary-text-color: #ccc;
+  --main-text-color: #fff;  
   --footer-secondary-text-color: #333;
-  --highlight-text-color: #3697fc;
-  --main-font: 'Barlow', sans-serif;
-
-  --normal-font-size: 23px;
-  --normal-font-weight: 500;
-
-  --smaller-font-size: 20px;
-
-  --border-color: #bdbdbd;
 }
 
-html, main{
+html{
   scroll-behavior: smooth;
 }
 
 a{
-  color: var(--highlight-text-color);
+  transition: 0.2s all;
 }
 
 a:hover{
-  color: var(--highlight-text-color);
+  color: #fff;
+  background-color: var(--highlight-bg-color);
+  padding: 0px 5px;
+  text-decoration: none;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-14px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
 }
 
 
@@ -56,37 +65,48 @@ body {
 }
 
 main{
-  overflow-y: auto;
-}
-
-.main-content{
-  height: 91vh;
+  padding-bottom: 9vh;
 }
 
 /* Nav */
+header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 91vh;
+}
+
 .mode-switch{
   color: var(--main-text-color);
   cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
 }
 
-nav a:hover{
-  text-decoration: none;
+.mode-switch:hover{
+  background-color: var(--highlight-bg-color);
+  color: #fff;
+  transform: scale(1.1);
 }
 
-nav span{
-  margin: 0rem 0px 1rem;
-  display: block;
+
+
+nav a{
+  margin-bottom: 5px;
   color: var(--secondary-text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
-  cursor: pointer;
-  user-select: none;
-  transition: 0.2s all;
-
 }
 
-nav span:hover, nav span.active{
-  color: var(--highlight-text-color);
+nav a.active{
+  background-color: var(--highlight-text-color);
+  color: #fff;
+  padding: 0px 5px;
 }
 /* Nav */
 
@@ -96,60 +116,66 @@ footer{
   height: 9vh;
   display: flex;
   align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
 }
 
-footer a, footer a:hover{
+footer a{
   color: var(--footer-secondary-text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--normal-font-weight);
-  user-select: none;
+  padding: 0px 5px;
+}
+
+footer a:hover{
+  transform: scale(1.1);
 }
 /* Footer */
 
 .section-container{
-  min-height: 100%;
+  min-height: 91vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Home */
+#home h1, #home h2{
+  font-family: var(--title-font);
+}
 #home h1{
   background-color: var(--highlight-bg-color);
   color: #fff;
   display: inline-block;
-  padding: 3px 2rem;
-  font-size: 6rem;
+  padding: 0px 20px;
+  font-size: 80px;
 }
 
 #home h2{
   color: var(--main-text-color);
-  font-size: 4rem;
+  font-size: 60px;
 }
 /* Home */
 
-.bottom-spacer{
-  height: 9vh;
-}
-
 /* About */
 #about p{
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 18px;
   color: var(--main-text-color);
+  font-family: var(--title-font);
 }
 
+#about span{
+  background-color: var(--highlight-bg-color);
+  color: #fff;
+  padding: 0px 5px;
+}
 #about a{
-  background-color: var(--dark-bg-color);
-  color: var(--main-bg-color);
-  padding: 3px 7px 6px;
-  border: 2px solid var(--dark-bg-color);
-  transition: 0.2s all;
+  text-decoration: underline;
+  transition: 0.2s background-color, 0.2s color, 0.2s padding;
 }
-
 #about a:hover{
-  background-color: transparent;
-  color: var(--dark-bg-color);
   text-decoration: none;
 }
 /* About */
@@ -294,13 +320,17 @@ footer a, footer a:hover{
 /* Arrow Animation */
 
 /* Contact form */
-#contact p{
-  margin: 20px 0px;
-  font-size: 26px;
-}
 #contact a{
-  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: var(--normal-font-size);
   color: var(--main-text-color);
+  padding: 0px 5px;
+  transition: 0.2s all;
+  font-family: var(--title-font);
+}
+#contact a:hover{
+  transform: scale(1.1);
+  color: #fff;
 }
 /* Contact form */
 
