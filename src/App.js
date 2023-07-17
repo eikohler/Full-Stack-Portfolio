@@ -35,8 +35,8 @@ function App() {
         </section>
       </header>
       <main className='container-fluid'>        
-        <section className='row mx-0 justify-content-end'>          
-          <div className='col-11 px-5'>
+        <section className='row mx-0 justify-content-center'>          
+          <div className='col-10 px-0'>
             <section id="home" className="section-container" ref={ref1}>
               <Home />
             </section>

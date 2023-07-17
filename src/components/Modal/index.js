@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faLaptop, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Modal = ({ onClose, currentWork }) => {
     const {image, name, tools, app} = currentWork;
