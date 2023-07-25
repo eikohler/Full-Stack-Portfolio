@@ -3,8 +3,8 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const variants = {
-    visible: { opacity: 1, y: "0px", transition: { duration: 0.5 } },
-    hidden: { opacity: 0, y: "100px" }
+    visible: { opacity: 1, y: "0px", transition: { duration: 1 } },
+    hidden: { opacity: 0, y: "50px" }
 };
 
 function WorkItem(props) {
