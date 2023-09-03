@@ -10,6 +10,8 @@ const variants = {
 function WorkItem(props) {
     const {work, i} = props;
 
+    const domain = work.url.replace('https://','').replace('/','');
+
     const controls = useAnimation();
     const [ref, inView] = useInView();
 
@@ -32,7 +34,7 @@ function WorkItem(props) {
                 </div>
                 <div className='text-center work-info'>
                     <span className="mb-1" key={i+" "+work.name+" title"}>{work.name}</span>
-                    <p className="mb-0">Built on {work.cms}</p>
+                    <p className="mb-0">{domain}</p>
                 </div>
             </a>
         </motion.div>
