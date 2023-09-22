@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Front-End-Portfolio/static/css/main.5f873c87.css",
-    "main.js": "/Front-End-Portfolio/static/js/main.95314fb5.js",
+    "main.css": "/Front-End-Portfolio/static/css/main.fa5cd1d0.css",
+    "main.js": "/Front-End-Portfolio/static/js/main.d489f7aa.js",
     "static/js/787.3fe8b5fc.chunk.js": "/Front-End-Portfolio/static/js/787.3fe8b5fc.chunk.js",
     "static/media/gol.png": "/Front-End-Portfolio/static/media/gol.4e2d82159543148abb9f.png",
     "static/media/mciver.png": "/Front-End-Portfolio/static/media/mciver.106f34fa025dff7fae2f.png",
@@ -15,12 +15,12 @@
     "static/media/kosi.png": "/Front-End-Portfolio/static/media/kosi.9ec715a293c59f1ea554.png",
     "static/media/filkow.png": "/Front-End-Portfolio/static/media/filkow.0f332aa3e0b0a5ab4405.png",
     "index.html": "/Front-End-Portfolio/index.html",
-    "main.5f873c87.css.map": "/Front-End-Portfolio/static/css/main.5f873c87.css.map",
-    "main.95314fb5.js.map": "/Front-End-Portfolio/static/js/main.95314fb5.js.map",
+    "main.fa5cd1d0.css.map": "/Front-End-Portfolio/static/css/main.fa5cd1d0.css.map",
+    "main.d489f7aa.js.map": "/Front-End-Portfolio/static/js/main.d489f7aa.js.map",
     "787.3fe8b5fc.chunk.js.map": "/Front-End-Portfolio/static/js/787.3fe8b5fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f873c87.css",
-    "static/js/main.95314fb5.js"
+    "static/css/main.fa5cd1d0.css",
+    "static/js/main.d489f7aa.js"
   ]
 }
