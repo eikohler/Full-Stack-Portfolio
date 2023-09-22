@@ -1,11 +1,10 @@
 :root {
   --main-bg-color: #fff;
   --highlight-bg-color: #3697fc;
-  --dark-bg-color: #000;
+  --footer-bg-color: #000;
   --main-text-color: #000;
   --secondary-text-color: #ccc;
-  --footer-secondary-text-color: #ccc;
-  --highlight-text-color: #3697fc;
+  --footer-text-color: #ccc;
 
   --heading-font: 'Barlow', sans-serif;
   --main-font: 'Crimson Text', serif;
@@ -15,11 +14,18 @@
 }
 
 [data-theme="dark"] {
-  --main-bg-color: #000;
-  --highlight-bg-color: #3697fc;
-  --dark-bg-color: #fff;
-  --main-text-color: #fff;  
-  --footer-secondary-text-color: #333;
+  --main-bg-color: linear-gradient(90deg, rgba(1,5,9,1) 50%, rgba(13,46,82,1) 100%);
+  --highlight-bg-color: #4c93dc;
+  --footer-bg-color: #eee;
+  --main-text-color: #eee;
+  --secondary-text-color: #ccc;
+  --footer-text-color: #333;
+
+  --heading-font: 'Barlow', sans-serif;
+  --main-font: 'Crimson Text', serif;
+
+  --normal-font-size: 20px;
+  --normal-font-weight: 500;
 }
 
 html{
@@ -73,7 +79,7 @@ body {
   font-family: var(--heading-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--main-bg-color);
+  background: var(--main-bg-color);
   font-size: var(--normal-font-size);
 }
 
@@ -116,7 +122,7 @@ nav a{
 }
 
 nav a.active{
-  background-color: var(--highlight-text-color);
+  background-color: var(--highlight-bg-color);
   color: #fff;
   padding: 0px 5px;
 }
@@ -124,7 +130,7 @@ nav a.active{
 
 /* Footer */
 footer{
-  background-color: var(--dark-bg-color);
+  background-color: var(--footer-bg-color);
   height: 9vh;
   display: flex;
   align-items: center;
@@ -135,7 +141,7 @@ footer{
 }
 
 footer a{
-  color: var(--footer-secondary-text-color);
+  color: var(--footer-text-color);
   font-weight: var(--normal-font-weight);
   padding: 0px 5px;
 }
