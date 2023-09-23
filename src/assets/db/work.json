@@ -31,16 +31,6 @@
       "url": "https://mymentalgame.com/"
     },
     {
-      "image": "filkow.png",
-      "name": "Filkow Law",
-      "url": "https://filkowlaw.com/"
-    },
-    {
-      "image": "gol.png",
-      "name": "Garden of Life Canada",
-      "url": "https://gardenoflifecanada.com/"
-    },
-    {
       "image": "kosi.png",
       "name": "KOSI Wellness",
       "url": "https://kosiwellness.com/"
@@ -49,11 +39,6 @@
       "image": "peppup.png",
       "name": "Pep & Pup",
       "url": "https://pepandpup.com/"
-    },
-    {
-      "image": "myvikini.png",
-      "name": "My Vikini",
-      "url": "https://myvikini.com/"
-    }
+    }    
   ]
 }
