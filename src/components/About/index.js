@@ -22,11 +22,11 @@ function About() {
     <div className="row mx-0 justify-content-center">        
       <div className="col-lg-7 col-sm-10 text-center">
         <motion.div ref={ref} variants={variants} initial="hidden" animate={controls}>
-          <p><span>Hello!</span> I'm a Vancouver-based Full-Stack Developer specializing in 
+          <p><span>Hello!</span> I'm a Vancouver-based Full Stack Developer specializing in 
           Front End Development with advanced skills in HTML, CSS, JavaScript, jQuery, Bootstrap, React and PHP.<br></br>
           I also specialize in building eCommerce and user-friendly websites through WordPress and Shopify.</p>
           <p>My background is in Computer Science and Visual Arts from Brock University. 
-            As well, I've completed the Full-Stack Coding BootCamp from Carleton University 
+            As well, I've completed the Full Stack Coding BootCamp from Carleton University 
             and further went on to assist in teaching the same course at the University of Richmond. 
             I also have a strong interest in UI/UX design.</p>
           <p>I have 2+ years experience working alongside designers and developers to bring client's 
