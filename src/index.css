@@ -14,7 +14,7 @@
 }
 
 [data-theme="dark"] {
-  --main-bg-color: linear-gradient(90deg, rgba(1,5,9,1) 50%, rgba(13,46,82,1) 100%);
+  --main-bg-color: linear-gradient(90deg,#02070d 25%,#09203a 100%);
   --highlight-bg-color: #4c93dc;
   --footer-bg-color: #eee;
   --main-text-color: #eee;
