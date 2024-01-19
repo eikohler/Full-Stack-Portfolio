@@ -1,6 +1,11 @@
 {
   "works": [
     {
+      "image": "yourstory.png",
+      "name": "Your Story Notes App",
+      "url": "https://yourstorynotes.app/"
+    },
+    {
       "image": "kipling.png",
       "name": "Kipling Media",
       "url": "https://kiplingmedia.com/"

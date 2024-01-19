@@ -49,6 +49,12 @@ a.no-highlight:hover{
   text-decoration: none;
 }
 
+img{
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
 p{
   color: var(--main-text-color);
 }

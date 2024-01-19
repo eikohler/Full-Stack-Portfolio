@@ -31,7 +31,7 @@ function About() {
             I also have a strong interest in UI/UX design.</p>
           <p>I have 2+ years experience working alongside designers and developers to bring client's 
             ideas and design concepts to life.</p>
-          <p>See my past work projects <a href="#work">below.</a></p>
+          <p>See my work and personal projects <a href="#work">below.</a></p>
         </motion.div>
       </div>
     </div>
