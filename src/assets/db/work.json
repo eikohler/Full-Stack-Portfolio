@@ -6,6 +6,16 @@
       "url": "https://yourstorynotes.app/"
     },
     {
+      "image": "wired.png",
+      "name": "Wired 4 Healing",
+      "url": "https://wired4healing.com/"
+    },
+    {
+      "image": "nash.png",
+      "name": "Nash Collective Shop",
+      "url": "https://the-nashcollective.com/"
+    },
+    {
       "image": "kipling.png",
       "name": "Kipling Media",
       "url": "https://kiplingmedia.com/"
@@ -14,11 +24,6 @@
       "image": "vcm.png",
       "name": "Vancouver Christmas Market",
       "url": "https://www.vancouverchristmasmarket.com/"
-    },
-    {
-      "image": "nash.png",
-      "name": "Nash Collective Shop",
-      "url": "https://the-nashcollective.com/"
     },
     {
       "image": "evolution.png",
