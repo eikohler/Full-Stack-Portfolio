@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f89e6cd0.css",
+    "main.js": "/static/js/main.3a19621f.js",
+    "static/media/gol.png": "/static/media/gol.4e2d82159543148abb9f.png",
+    "static/media/mciver.png": "/static/media/mciver.106f34fa025dff7fae2f.png",
+    "static/media/mmg.png": "/static/media/mmg.204ec8356ce69cd49ad8.png",
+    "static/media/nash.png": "/static/media/nash.9949709fc8357aa07fdb.png",
+    "static/media/kipling.png": "/static/media/kipling.c63863086de357b36b35.png",
+    "static/media/wired.png": "/static/media/wired.827f9960de0390791308.png",
+    "static/media/vcm.png": "/static/media/vcm.c8d331a04eba72e8cb2b.png",
+    "static/media/peppup.png": "/static/media/peppup.d325aede92b0af83eda1.png",
+    "static/media/ltwealth.png": "/static/media/ltwealth.2dd198499063a05c52dc.png",
+    "static/media/myvikini.png": "/static/media/myvikini.cff95e0e20d38fcb987e.png",
+    "static/media/evolution.png": "/static/media/evolution.9364770933886ffa54ba.png",
+    "static/media/kosi.png": "/static/media/kosi.9ec715a293c59f1ea554.png",
+    "static/media/filkow.png": "/static/media/filkow.0f332aa3e0b0a5ab4405.png",
+    "static/media/yourstory.png": "/static/media/yourstory.6cf6fc75a35a5c381ca3.png",
+    "index.html": "/index.html",
+    "main.f89e6cd0.css.map": "/static/css/main.f89e6cd0.css.map",
+    "main.3a19621f.js.map": "/static/js/main.3a19621f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f89e6cd0.css",
+    "static/js/main.3a19621f.js"
+  ]
+}
