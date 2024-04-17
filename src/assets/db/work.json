@@ -11,9 +11,14 @@
       "url": "https://wired4healing.com/"
     },
     {
-      "image": "nash.png",
-      "name": "Nash Collective Shop",
-      "url": "https://the-nashcollective.com/"
+      "image": "neo.png",
+      "name": "Neo Naturelle",
+      "url": "https://neonaturelle.com/"
+    },
+    {
+      "image": "nno.png",
+      "name": "New Nordic Canada",
+      "url": "https://www.newnordic.ca/"
     },
     {
       "image": "kipling.png",
@@ -21,9 +26,19 @@
       "url": "https://kiplingmedia.com/"
     },
     {
+      "image": "okh.png",
+      "name": "Our Kids Health",
+      "url": "https://kidshealthnetwork.org/"
+    },    
+    {
       "image": "vcm.png",
       "name": "Vancouver Christmas Market",
       "url": "https://www.vancouverchristmasmarket.com/"
+    },
+    {
+      "image": "nash.png",
+      "name": "Nash Collective Shop",
+      "url": "https://the-nashcollective.com/"
     },
     {
       "image": "evolution.png",
