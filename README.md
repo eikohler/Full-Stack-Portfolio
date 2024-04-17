@@ -1,4 +1,4 @@
-# Front End Dev Portfolio
+# Full Stack Dev Portfolio
 
 - React portfolio, a place to place all my projects and contact links and some info about me
 - Has a dark mode feature for those late night viewers
