@@ -22,16 +22,14 @@ function About() {
     <div className="row mx-0 justify-content-center">        
       <div className="col-lg-7 col-sm-10 text-center">
         <motion.div ref={ref} variants={variants} initial="hidden" animate={controls}>
-          <p><span>Hello!</span> I'm a Vancouver-based Full Stack Developer with advanced skills in HTML, CSS, 
-          JavaScript, jQuery, SCSS, Bootstrap, React, TypeScript and PHP.
-          I also specialize in building eCommerce and user-friendly websites through WordPress and Shopify.</p>
-          <p>My background is in Computer Science and Visual Arts from Brock University. 
-            As well, I've completed the Full Stack Coding BootCamp from Carleton University 
-            and further went on to assist in teaching the same course at the University of Richmond. 
-            I also have a strong interest in UI/UX design.</p>
-          <p>I have over 3 years experience working alongside designers and developers to bring client's 
-            ideas and design concepts to life.</p>
-          <p>See my work and personal projects <a href="#work">below.</a></p>
+          <p><span>Hello!</span> I'm a Vancouver-based Senior Full Stack Developer with skills in HTML, CSS3, 
+          JavaScript, TypeScript, React, SASS, NextJS, jQuery, Bootstrap and PHP.</p>
+          <p>I specialize in building custom user-friendly eCommerce websites through WordPress.</p>
+          <p>My background is in Computer Science and Visual Arts.</p>
+          <p>I have a strong passion for UI/UX design and I love designing personal projects on Figma.</p>
+          <p>I have over 4 years of experience working alongside designers and developers to bring client's 
+            ideas to life.</p>
+          <p>See my past work and personal projects <a href="#work">below.</a></p>
         </motion.div>
       </div>
     </div>

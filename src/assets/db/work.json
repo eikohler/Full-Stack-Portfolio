@@ -6,39 +6,14 @@
       "url": "https://yourstorynotes.app/"
     },
     {
-      "image": "wired.png",
-      "name": "Wired 4 Healing",
-      "url": "https://wired4healing.com/"
+      "image": "papayastickers.png",
+      "name": "Papaya Stickers",
+      "url": "https://papayastickers.com/"
     },
     {
-      "image": "neo.png",
-      "name": "Neo Naturelle",
-      "url": "https://neonaturelle.com/"
-    },
-    {
-      "image": "nno.png",
-      "name": "New Nordic Canada",
-      "url": "https://www.newnordic.ca/"
-    },
-    {
-      "image": "kipling.png",
-      "name": "Kipling Media",
-      "url": "https://kiplingmedia.com/"
-    },
-    {
-      "image": "okh.png",
-      "name": "Our Kids Health",
-      "url": "https://kidshealthnetwork.org/"
-    },    
-    {
-      "image": "vcm.png",
-      "name": "Vancouver Christmas Market",
-      "url": "https://www.vancouverchristmasmarket.com/"
-    },
-    {
-      "image": "nash.png",
-      "name": "Nash Collective Shop",
-      "url": "https://the-nashcollective.com/"
+      "image": "circlecraft.png",
+      "name": "Circle Craft",
+      "url": "https://circlecraft.com/"
     },
     {
       "image": "evolution.png",
@@ -46,29 +21,24 @@
       "url": "https://evolutionwalker.com/"
     },
     {
-      "image": "ltwealth.png",
-      "name": "LT Wealth",
-      "url": "https://ltwealth.ca/"
+      "image": "neo.png",
+      "name": "Neo Naturelle",
+      "url": "https://neonaturelle.com/"
     },
     {
-      "image": "mciver.png",
-      "name": "McIver Capital Management",
-      "url": "https://www.mcivercapital.com/"
+      "image": "junction.png",
+      "name": "Junction Public Market",
+      "url": "https://junctionpublicmarket.com/"
     },
     {
-      "image": "mmg.png",
-      "name": "My Mental Game",
-      "url": "https://mymentalgame.com/"
+      "image": "nno.png",
+      "name": "New Nordic Canada",
+      "url": "https://www.newnordic.ca/"
     },
     {
-      "image": "kosi.png",
-      "name": "KOSI Wellness",
-      "url": "https://kosiwellness.com/"
-    },
-    {
-      "image": "peppup.png",
-      "name": "Pep & Pup",
-      "url": "https://pepandpup.com/"
-    }    
+      "image": "vcm.png",
+      "name": "Vancouver Christmas Market",
+      "url": "https://www.vancouverchristmasmarket.com/"
+    }
   ]
 }
