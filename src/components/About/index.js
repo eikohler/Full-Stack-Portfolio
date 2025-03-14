@@ -23,7 +23,7 @@ function About() {
       <div className="col-lg-7 col-sm-10 text-center">
         <motion.div ref={ref} variants={variants} initial="hidden" animate={controls}>
           <p><span>Hello!</span> I'm a Vancouver-based Senior Full Stack Developer with skills in HTML, CSS3, 
-          JavaScript, TypeScript, React, SASS, NextJS, jQuery, Bootstrap and PHP.</p>
+          JavaScript, TypeScript, React, SASS, NextJS, GSAP, jQuery, and PHP.</p>
           <p>I specialize in building custom user-friendly eCommerce websites through WordPress.</p>
           <p>My background is in Computer Science and Visual Arts.</p>
           <p>I have a strong passion for UI/UX design and I love designing personal projects on Figma.</p>
