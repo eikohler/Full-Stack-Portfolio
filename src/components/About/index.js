@@ -29,7 +29,7 @@ function About() {
           <p>I have a strong passion for UI/UX design and I love designing personal projects on Figma.</p>
           <p>I have over 4 years of experience working alongside designers and developers to bring client's 
             ideas to life.</p>
-          <p>See my past work and personal projects <a href="#work">below.</a></p>
+          <p>See some of my past work and personal projects <a href="#work">below.</a></p>
         </motion.div>
       </div>
     </div>
